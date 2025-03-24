@@ -68,7 +68,31 @@ var animals = [];
 
 animals.push(animal);
 
+console.log(animals);
 
+var duck = { species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze', 'woosh'] }
+
+animals.push(duck);
+
+console.log(animals);
+
+var cat = {
+  species: 'cat',
+  name: 'Herbert',
+  noises: ['meow', 'hiss']
+};
+
+animals.push(cat);
+
+var duck = {
+  species: 'duck',
+  name: 'Donald',
+  noises: ['quack', 'quah']
+};
+
+animals.push(duck);
+
+console.log(animals);
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////

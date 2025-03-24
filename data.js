@@ -97,8 +97,22 @@ console.log(animals);
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+// I chose an array because it is the easiest to create an list for.
 
+var friends = [];
 
+function getRandom() {
+  output = Math.floor(Math.random() * (animals.length - 1))
+  return output
+}
+
+friends.push(animals[getRandom()].name);
+
+console.log(friends);
+
+animals[0]['friends'] = friends;
+
+console.log(animals);
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and

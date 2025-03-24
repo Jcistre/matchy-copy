@@ -12,8 +12,21 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+function search(array, name) {
+    // for loop to iterate over array
+    for (var i = 0; i < array.length - 1; i++) {
+        // if array of objects name equals para name
+        if (array[i].name === name) {
+            // return the object's name
+            return array[i];
+        // if not
+        } else {
+            // return null
+            return null;
+    }
+ }
+}
+console.log(search(animals, 'Cliford'))
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////

@@ -12,38 +12,52 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-function search(array, name) {
+function search(animals, name) {
     // for loop to iterate over array
-    for (var i = 0; i < array.length - 1; i++) {
+    for (var i = 0; i < animals.length - 1; i++) {
         // if array of objects name equals para name
-        if (array[i].name === name) {
+        if (animals[i].name === name) {
             // return the object's name
-            return array[i];
-        // if not
-        } else {
-            // return null
-            return null;
+            return animals[i];
+        }   
     }
+    return null;
  }
-}
-console.log(search(animals, 'Cliford'))
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function replace(animals, name, replacement) {
+    for (var i = 0; i < animals.length - 1; i++) {
+        if (animals[i].name === name) {
+            animals[i] = replacement
+        }
+    }
+}
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function remove(animals, name) {
+    for (var i = 0; i < animals.length - 1; i++) {
+        if (animals[i].name === name) {
+            animals.splice(animals[i], 1);
+        }
+    }
+}
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function add(animals, animal) {
+    for (var i = 0; i < animals.length - 1; i++) {
+        if (animal.name.length > 0 && animal.species.length > 0 && animals[i].name !== animal.name) {
+            animals.push(animal);
+        }
+    }
+}
 
 
 /**

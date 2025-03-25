@@ -51,10 +51,13 @@ function remove(animals, name) {
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-function add(animals, animal) {
-    for (var i = 0; i < animals.length - 1; i++) {
-        if (animal.name.length > 0 && animal.species.length > 0 && animals[i].name !== animal.name) {
-            animals.push(animal);
+function add(array, obj) {
+    // for loop to iterate over array
+    for (var i = 0; i < array.length - 1; i++) {
+        // if obj matches all the conditions
+        if (obj.name.length > 0 && obj.species.length > 0 && array[i].name !== obj.name) {
+            // push obj into array
+            array.push(obj);
         }
     }
 }

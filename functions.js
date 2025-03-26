@@ -60,7 +60,6 @@ function add(array, obj) {
         if (array[i].name === obj.name) {
             // push obj into array
             return nope.push(obj);
-            console.log(nope);
         } else if (obj.name.length > 0 && obj.species.length > 0) {
             return array.push(obj);
         }

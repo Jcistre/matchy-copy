@@ -57,7 +57,7 @@ function add(array, obj) {
         // if obj matches all the conditions
         if (obj.name.length > 0 && obj.species.length > 0 && array[i].name !== obj.name) {
             // push obj into array
-            array.push(obj);
+            return array.push(obj);
         }
     }
 }

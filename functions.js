@@ -52,11 +52,16 @@ function remove(animals, name) {
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 function add(array, obj) {
+    // nope array for reject
+    var nope = [];
     // for loop to iterate over array
     for (var i = 0; i < array.length - 1; i++) {
-        // if obj matches all the conditions
-        if (obj.name.length > 0 && obj.species.length > 0 && array[i].name !== obj.name) {
+        // if obj name matches 
+        if (array[i].name === obj.name) {
             // push obj into array
+            return nope.push(obj);
+            console.log(nope);
+        } else if (obj.name.length > 0 && obj.species.length > 0) {
             return array.push(obj);
         }
     }
